@@ -77,5 +77,24 @@ def predict():
         msg = 'Negative'
 
     return render_template('index.html', prediction_text='Tweet is {}'.format(msg))
+
+@app.route('/plots')
+def plots():
+    return render_template('plots1.html')
+
+@app.route('/wordcloud')
+def wordcloud():
+    return render_template('wordcloud1.html')
+
+@app.route('/confusionmatrix')
+def confusionmatrix():
+    return render_template('confusion1.html')
+
+@app.route('/second')
+def second():
+    return render_template('second.html')
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)

@@ -13,25 +13,9 @@
 </head>
 
 <body>
- <div class="login">
-	<h1>Twitter Sentiment Analysis</h1>
-
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="tweet" placeholder="Enter Tweet" required="required" />
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
-    <br>
-    <a href=second>
-      <button type="submit" class="btn btn-primary btn-block btn-large">Statistics</button>
-    </a>
-
-
-   <br>
-   {{ prediction_text }}
-
- </div>
-
+    <div class='login'>
+    <img src= './static/confusion_naive.png' alt="Chart" height="500" width="500">
+     </div>
 
 </body>
 </html>
